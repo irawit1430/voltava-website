@@ -1,0 +1,10 @@
+1:"$Sreact.fragment"
+2:I[9494,["/voltava-website/_next/static/chunks/0hkkl30-bzpea.js","/voltava-website/_next/static/chunks/0p12o5~ws2kc3.js"],"ClientPageRoot"]
+3:I[17454,["/voltava-website/_next/static/chunks/0hkkl30-bzpea.js","/voltava-website/_next/static/chunks/0p12o5~ws2kc3.js","/voltava-website/_next/static/chunks/0zg97u074da.8.js","/voltava-website/_next/static/chunks/0pce-ahm-2ywe.js"],"default"]
+6:I[73227,["/voltava-website/_next/static/chunks/0hkkl30-bzpea.js","/voltava-website/_next/static/chunks/0p12o5~ws2kc3.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+:HL["/voltava-website/_next/static/chunks/03-rbvkzskoh0.css","style"]
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","link","0",{"rel":"stylesheet","href":"/voltava-website/_next/static/chunks/03-rbvkzskoh0.css","precedence":"next"}],["$","script","script-0",{"src":"/voltava-website/_next/static/chunks/0zg97u074da.8.js","async":true}],["$","script","script-1",{"src":"/voltava-website/_next/static/chunks/0pce-ahm-2ywe.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"490MitJ9V9PIR8walHOX8"}
+4:{}
+5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
+8:null
