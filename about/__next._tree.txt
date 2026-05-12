@@ -1,3 +1,3 @@
 :HL["/voltava-website/_next/static/chunks/07i8tyxdnnt0z.css","style"]
 :HL["/voltava-website/_next/static/chunks/0kcnys.5ftlhl.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"about","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"490MitJ9V9PIR8walHOX8"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"about","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"IFwpEDEUS40t8vBnRIEbL"}
