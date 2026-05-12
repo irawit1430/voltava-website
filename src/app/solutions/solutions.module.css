@@ -1,0 +1,47 @@
+.page { padding-top: 80px; }
+
+.hero { position: relative; padding: 80px 0 60px; overflow: hidden; }
+.heroGlow { position: absolute; top: -30%; left: -10%; width: 60%; height: 160%; background: radial-gradient(ellipse, rgba(34,197,94,0.05) 0%, transparent 60%); pointer-events: none; }
+.container { max-width: 1280px; margin: 0 auto; padding: 0 40px; }
+.supertitle { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent-green); margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+.bar { width: 28px; height: 2px; background: var(--accent-green); border-radius: 2px; }
+.heroTitle { font-family: var(--font-display); font-size: clamp(2rem,4vw,3rem); font-weight: 800; line-height: 1.15; color: var(--text-primary); margin-bottom: 20px; max-width: 700px; }
+.hl { background: linear-gradient(135deg, #22C55E, #4ADE80); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.heroDesc { font-size: 1.1rem; line-height: 1.75; color: var(--text-secondary); max-width: 600px; }
+
+.solutionsSection { padding: 0 0 100px; }
+
+.solutionBlock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 48px;
+  margin-bottom: 24px;
+  transition: all var(--transition-base);
+}
+.solutionBlock:hover { border-color: var(--border-green); }
+
+.solLeft { display: flex; flex-direction: column; gap: 16px; }
+.solIcon { font-size: 2.2rem; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; background: var(--accent-green-subtle); border-radius: var(--radius-md); border: 1px solid rgba(34,197,94,0.1); }
+.solTitle { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--text-primary); }
+.solDesc { font-size: 0.95rem; line-height: 1.7; color: var(--text-secondary); }
+.solCta { display: inline-flex; align-items: center; gap: 6px; font-size: 0.88rem; font-weight: 600; color: var(--accent-green); margin-top: 8px; transition: gap 0.2s; }
+.solCta:hover { gap: 10px; }
+
+.solRight { display: flex; flex-direction: column; gap: 24px; }
+.solInfo { display: flex; flex-direction: column; gap: 10px; }
+.infoLabel { font-size: 0.78rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag { font-size: 0.8rem; font-weight: 600; color: var(--accent-green); background: var(--accent-green-subtle); border: 1px solid rgba(34,197,94,0.12); padding: 6px 14px; border-radius: var(--radius-full); }
+.useTag { font-size: 0.8rem; font-weight: 500; color: var(--text-secondary); background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); padding: 6px 14px; border-radius: var(--radius-full); }
+
+@media (max-width: 1024px) {
+  .solutionBlock { grid-template-columns: 1fr; gap: 32px; padding: 32px; }
+}
+@media (max-width: 640px) {
+  .container { padding: 0 20px; }
+  .solutionBlock { padding: 24px; }
+}
