@@ -8,8 +8,8 @@ import styles from "./contact.module.css";
 const contactInfo = [
   { icon: <MapPin size={24} color="#16A34A" />, label: "Address", value: "Delhi NCR, India 110070" },
   { icon: <Mail size={24} color="#16A34A" />, label: "Email", value: "gaurav@voltava.in", href: "mailto:gaurav@voltava.in" },
-  { icon: <Phone size={24} color="#16A34A" />, label: "Phone", value: "+91 92176 7723", href: "tel:+91921767723" },
-  { icon: <MessageCircle size={24} color="#16A34A" />, label: "WhatsApp", value: "Chat with us", href: "https://wa.me/91921767723" },
+  { icon: <Phone size={24} color="#16A34A" />, label: "Phone", value: "+91 921766 7723", href: "tel:+919217667723" },
+  { icon: <MessageCircle size={24} color="#16A34A" />, label: "WhatsApp", value: "Chat with us", href: "https://wa.me/919217667723" },
 ];
 
 const interests = [

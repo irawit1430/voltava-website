@@ -4,33 +4,20 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, FileText } from "lucide-react";
 import styles from "./BlogSection.module.css";
 
 const blogs = [
   {
-    category: "Technology",
-    title: "Understanding Active vs Passive Balancing in BMS",
+    slug: "powering-indias-intelligent-energy-future",
+    category: "Company Vision",
+    title: "Powering India’s Intelligent Energy Future",
     excerpt:
-      "A deep dive into battery balancing technologies and their impact on performance and life.",
-    date: "May 10, 2024",
-    color: "#22C55E",
-  },
-  {
-    category: "Industry",
-    title: "Why Smart BMS is Critical for Indian EV Fleets",
-    excerpt:
-      "How intelligent battery management improves uptime, safety and total cost of ownership.",
-    date: "Apr 28, 2024",
-    color: "#3B82F6",
-  },
-  {
-    category: "Company",
-    title: "Voltava Expands Manufacturing Facility in NCR",
-    excerpt:
-      "New expansion to meet growing demand for smart energy electronics across India.",
-    date: "Apr 15, 2024",
+      "Electric mobility, battery storage, renewable integration, and smart energy infrastructure are becoming the backbone of modern economies.",
+    date: "Jan 15, 2026",
+    readTime: "5 min",
     color: "#F59E0B",
+    image: "/assets/intelligent-energy.png",
   },
 ];
 
@@ -57,13 +44,50 @@ export default function BlogSection() {
           </Link>
         </div>
 
-        <div className={styles.grid} style={{ display: 'block' }}>
-          <div style={{ textAlign: "center", padding: "80px 0", background: "var(--bg-card)", borderRadius: "var(--radius-lg)", border: "1px solid var(--border-subtle)" }}>
-            <h3 style={{ fontSize: "1.8rem", fontFamily: "var(--font-display)", fontWeight: "700", color: "var(--text-primary)", marginBottom: "12px" }}>Coming Soon</h3>
-            <p style={{ color: "var(--text-secondary)", maxWidth: "450px", margin: "0 auto", lineHeight: "1.6" }}>
-              Our engineering team is preparing deep dives into smart BMS, fleet telematics, and energy storage electronics. Check back soon for updates.
-            </p>
-          </div>
+        <div className={styles.grid}>
+          {blogs.map((blog, idx) => {
+            const CardWrapper = blog.slug ? Link : "div";
+            const wrapperProps = blog.slug ? { href: `/blog/${blog.slug}`, className: styles.card } : { className: styles.card, style: { cursor: "default" } };
+            return (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 30 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.6, delay: 0.1 * idx }}
+              >
+                <CardWrapper {...wrapperProps}>
+                  <div className={styles.cardImage} style={{ background: `linear-gradient(135deg, ${blog.color}15, transparent)`, padding: blog.image ? 0 : undefined }}>
+                    {blog.image ? (
+                      <Image src={blog.image} alt={blog.title} width={400} height={180} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    ) : (
+                      <FileText className={styles.cardEmoji} style={{ color: blog.color }} />
+                    )}
+                  </div>
+                  <div className={styles.cardBody}>
+                    <span
+                      className={styles.category}
+                      style={{
+                        color: blog.color,
+                        borderColor: `${blog.color}40`,
+                      }}
+                    >
+                      {blog.category}
+                    </span>
+                    <h3 className={styles.cardTitle}>{blog.title}</h3>
+                    <p className={styles.cardExcerpt}>{blog.excerpt}</p>
+                    <div className={styles.cardFooter}>
+                      <span className={styles.meta}>{blog.date} · {blog.readTime || "5 min"}</span>
+                      {blog.slug && (
+                        <span className={styles.readMore} style={{ color: blog.color }}>
+                          Read <ArrowRight size={14} style={{ display: "inline", verticalAlign: "middle" }}/>
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                </CardWrapper>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>

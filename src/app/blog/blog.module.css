@@ -11,7 +11,7 @@
 .gridSection { padding: 0 0 100px; }
 .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 
-.card { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); overflow: hidden; transition: all var(--transition-base); cursor: pointer; }
+.card { background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); overflow: hidden; transition: all var(--transition-base); cursor: pointer; text-decoration: none; display: flex; flex-direction: column; }
 .card:hover { border-color: var(--border-green); transform: translateY(-4px); box-shadow: var(--shadow-md); }
 
 .cardImage { height: 180px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--border-subtle); }

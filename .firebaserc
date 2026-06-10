@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "voltava-1",
+    "productions": "voltava-1"
+  },
+  "targets": {},
+  "etags": {}
+}

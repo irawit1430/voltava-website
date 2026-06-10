@@ -7,6 +7,8 @@ import { MapPin, Brain, Shield, Radio } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
+import heroBg from "@/assets/hero-bg.png";
+
 const features = [
   { icon: <MapPin size={20} />, text: "India Designed & Manufactured" },
   { icon: <Brain size={20} />, text: "Advanced Battery Intelligence" },
@@ -23,7 +25,7 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className={styles.bgImageContainer}>
         <Image
-          src="/assets/hero-bg.png"
+          src={heroBg}
           alt="Voltava Background"
           fill
           priority

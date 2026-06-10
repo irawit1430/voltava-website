@@ -72,6 +72,10 @@
   border-radius: var(--radius-lg);
   overflow: hidden;
   transition: all var(--transition-base);
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
@@ -81,10 +85,16 @@
 }
 
 .cardImage {
-  position: relative;
-  overflow: hidden;
-  height: 200px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-bottom: 1px solid var(--border-subtle);
+}
+
+.cardEmoji {
+  font-size: 2.5rem;
+  opacity: 0.4;
 }
 
 .cardBody {
@@ -123,12 +133,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 8px;
   padding-top: 16px;
   border-top: 1px solid var(--border-subtle);
+  margin-top: 8px;
 }
 
-.date {
+.meta {
   font-size: 0.78rem;
   color: var(--text-muted);
 }
@@ -137,7 +147,6 @@
   font-size: 0.82rem;
   font-weight: 600;
   color: var(--accent-green);
-  transition: color var(--transition-fast);
 }
 
 /* Responsive */

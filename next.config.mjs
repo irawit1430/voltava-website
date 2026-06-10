@@ -4,8 +4,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/voltava-website',
-  assetPrefix: '/voltava-website/',
 };
 
 export default nextConfig;

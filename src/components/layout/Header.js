@@ -38,7 +38,7 @@ export default function Header() {
       <div className={styles.container}>
         {/* Logo */}
         <Link href="/" className={styles.logo} aria-label="Voltava Home">
-          <Image src={logo} alt="Voltava Energy Systems" width={160} height={45} priority style={{ height: "auto" }} />
+          <Image src={logo} alt="Voltava Energy Systems" width={230} height={65} priority />
         </Link>
 
         {/* Desktop Nav */}

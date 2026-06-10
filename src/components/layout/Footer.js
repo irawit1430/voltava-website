@@ -71,7 +71,7 @@ export default function Footer() {
         <div className={styles.top}>
           {/* Brand Column */}
           <div className={styles.brand}>
-            <Image src={logo} alt="Voltava Energy Systems" width={150} height={42} style={{ height: "auto" }} />
+            <Image src={logo} alt="Voltava Energy Systems" width={150} height={42} />
             <p className={styles.brandDesc}>
               Designing and manufacturing intelligent energy electronics for
               electrification, energy storage and renewable future.
@@ -107,7 +107,7 @@ export default function Footer() {
             <ul className={styles.contactList}>
               <li>
                 <span className={styles.contactIcon}><Phone size={16} /></span>
-                <a href="tel:+919217677723">+91 92176 7723</a>
+                <a href="tel:+919217667723">+91 921766 7723</a>
               </li>
               <li>
                 <span className={styles.contactIcon}><Mail size={16} /></span>
